@@ -7,11 +7,18 @@ from collections import defaultdict
 
 def extract_programs(content):
     programs = defaultdict(list)
+    terms = []
     current_lang = None
     current_program = []
 
     lines = content.split("\n")
     for line in lines:
+        if line.startswith("%S") or line.startswith("%T") or line.startswith("%U"):
+            terms += [
+                int(term.strip())
+                for term in re.sub(r"^%[STU] A\d+ ?", "", line).split(",")
+                if term.strip() != ""
+            ]
         if "See Links" in line:
             continue
         line = line.replace("(Small Basic)", "(SmallBasic)")
@@ -61,11 +68,17 @@ def extract_programs(content):
     if current_lang and current_program:
         programs[current_lang].append("\n".join(current_program).strip())
 
+    programs["JSON"].append(repr(terms))
+
     return programs
 
 
 def write_programs(programs, sequence_id):
+    if "Python" not in programs:
+        return
     for lang, code_blocks in programs.items():
+        if lang != "Python" and lang != "JSON":
+            continue
         for i, code in enumerate(code_blocks):
             lang_ext = get_language_extension(lang)
             if lang_ext is None:
@@ -134,6 +147,7 @@ def get_language_extension(lang):
         "Rust": "rs",
         "J": "j",
         "Delphi": "pas",
+        "JSON": "json",
     }
     return extensions.get(lang)
 
