@@ -1,0 +1,1 @@
+print([16**n for n in range(20)]) # _Stefano Spezia_, Nov 10 2018

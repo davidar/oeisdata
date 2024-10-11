@@ -1,0 +1,1 @@
+print([1 for n in range(90)]) # _Michael S. Branicky_, Apr 04 2022

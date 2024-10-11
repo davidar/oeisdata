@@ -1,0 +1,1 @@
+print([2**n + n for n in range(34)]) # _Karl V. Keller, Jr._, Aug 18 2020

@@ -1,0 +1,1 @@
+print([2*n*(n+1)+1 for n in range(48)]) # _Michael S. Branicky_, Jan 05 2021

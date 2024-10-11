@@ -1,0 +1,1 @@
+print([3**(2*n+1) for n in range(18)]) # _Michael S. Branicky_, Mar 27 2021

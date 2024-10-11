@@ -1,0 +1,1 @@
+print([n for n in range(1, 3001) if bin(n)[2:].count("1")==2]) # _Indranil Ghosh_, Jun 03 2017

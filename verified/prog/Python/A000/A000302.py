@@ -1,0 +1,1 @@
+print([4**n for n in range(25)]) # _Michael S. Branicky_, Jan 04 2021

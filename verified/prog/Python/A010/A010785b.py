@@ -1,0 +1,1 @@
+print([0]+[int(d*r) for r in range(1, 7) for d in "123456789"]) # _Michael S. Branicky_, Dec 29 2021

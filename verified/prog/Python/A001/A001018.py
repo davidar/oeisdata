@@ -1,0 +1,1 @@
+print([8**n for n in range(25)]) # _Michael S. Branicky_, Dec 29 2021

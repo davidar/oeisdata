@@ -1,0 +1,1 @@
+print([14**n for n in range(21)]) # _Michael S. Branicky_, Jan 14 2021

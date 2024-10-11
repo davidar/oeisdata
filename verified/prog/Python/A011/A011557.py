@@ -1,0 +1,1 @@
+print([10**n for n in range(19)]) # _Michael S. Branicky_, Jan 10 2021

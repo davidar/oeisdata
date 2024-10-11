@@ -1,0 +1,1 @@
+print([6*n*(n-1)+1 for n in range(1, 47)]) # _Michael S. Branicky_, Jan 13 2021

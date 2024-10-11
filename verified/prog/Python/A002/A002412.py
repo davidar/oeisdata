@@ -1,0 +1,1 @@
+print([n*(n+1)*(4*n-1)//6 for n in range(40)]) # _Michael S. Branicky_, Mar 28 2022

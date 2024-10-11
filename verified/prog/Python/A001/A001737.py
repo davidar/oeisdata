@@ -1,0 +1,1 @@
+print([int(bin(k**2)[2:]) for k in range(0, 28)]) # _Karl-Heinz Hofmann_, Feb 01 2022

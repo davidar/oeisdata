@@ -1,0 +1,1 @@
+print([(10**n-1)//9 for n in range(100)]) # _Michael S. Branicky_, Apr 30 2022

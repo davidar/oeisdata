@@ -1,0 +1,1 @@
+print([1+2**n//3 for n in range(40)])  # _Gennady Eremin_, Feb 05 2022

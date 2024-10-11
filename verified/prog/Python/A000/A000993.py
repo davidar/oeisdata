@@ -1,0 +1,1 @@
+print([(2 + 2**n // 6) * (1 + 5**(n+1) // 12) if n else 1 for n in range(21)]) # _Nick Hobson_, Mar 10 2024

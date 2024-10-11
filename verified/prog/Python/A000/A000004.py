@@ -1,0 +1,1 @@
+print([0 for n in range(102)]) # _Michael S. Branicky_, Apr 04 2022

@@ -1,0 +1,1 @@
+print([k for k in range(1, 105) if k%3]) # _Michael S. Branicky_, Sep 06 2021

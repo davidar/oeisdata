@@ -1,0 +1,1 @@
+print([2**(n-1)//n for n in range(1, 40)]) # _Gennady Eremin_, Feb 04 2022
