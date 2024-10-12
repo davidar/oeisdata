@@ -1,0 +1,1 @@
+Table[5^n, {n, 0, 30}] (* _Stefan Steinerberger_, Apr 06 2006 *)

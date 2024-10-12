@@ -1,0 +1,1 @@
+s = 0; lst = {s}; Do[s += n^7; AppendTo[lst, s], {n, 1, 30, 1}]; lst (* _Zerinvary Lajos_, Jul 12 2009 *)

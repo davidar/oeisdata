@@ -1,0 +1,1 @@
+Select[Range[300], PrimeQ[(2 * #)^4 + 1] &] (* _Vladimir Joseph Stephan Orlovsky_, Jan 24 2012 *)

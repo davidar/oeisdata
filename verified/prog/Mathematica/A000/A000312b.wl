@@ -1,0 +1,1 @@
+Table[Sum[StirlingS2[n, i] i! Binomial[n, i], {i, 0, n}], {n, 0, 20}] (* _Geoffrey Critzer_, Mar 17 2009 *)

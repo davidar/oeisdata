@@ -1,0 +1,1 @@
+Table[n (3 n - 2), {n, 0, 50}] (* _Harvey P. Dale_, May 06 2012 *)

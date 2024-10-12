@@ -1,0 +1,1 @@
+Numerator[ BernoulliB[ 2*Range[0, 20]]] (* _Jean-François Alcover_, Oct 16 2012 *)

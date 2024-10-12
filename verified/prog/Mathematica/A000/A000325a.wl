@@ -1,0 +1,1 @@
+Table[2^n - n, {n, 0, 39}] (* _Alonso del Arte_, Sep 15 2014 *)

@@ -1,0 +1,1 @@
+Range[0,100]^4 (* _Vladimir Joseph Stephan Orlovsky_, Mar 14 2011 *)

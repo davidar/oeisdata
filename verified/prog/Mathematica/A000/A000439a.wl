@@ -1,0 +1,1 @@
+Table[(n^4 + 18 n^3 + 83 n^2 + 114 n) / 24, {n, 50}] (* _Vincenzo Librandi_, Mar 18 2020 *)

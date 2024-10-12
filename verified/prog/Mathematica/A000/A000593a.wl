@@ -1,0 +1,1 @@
+Table[a := Select[Divisors[n], OddQ[ # ]&]; Sum[a[[i]], {i, 1, Length[a]}], {n, 1, 60}] (* _Stefan Steinerberger_, Apr 01 2006 *)

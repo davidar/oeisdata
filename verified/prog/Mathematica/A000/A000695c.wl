@@ -1,0 +1,1 @@
+Union@ Flatten@ NestList[ Join[ 4#, 4# + 1] &, {0}, 6] (* _Robert G. Wilson v_, Aug 30 2014 *)

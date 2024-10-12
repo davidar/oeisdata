@@ -1,0 +1,1 @@
+Table[FromDigits[IntegerDigits[n, 2], 4], {n, 0, 51}] (* _IWABUCHI Yu(u)ki_, Apr 06 2013 *)

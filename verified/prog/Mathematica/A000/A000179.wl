@@ -1,0 +1,1 @@
+a[n_] := 2*n*Sum[(-1)^k*Binomial[2*n - k, k]*(n - k)!/(2*n - k), {k, 0, n}]; a[0] = 1; Table[a[n], {n, 0, 21}] (* _Jean-François Alcover_, Dec 05 2012, from 2nd formula *)

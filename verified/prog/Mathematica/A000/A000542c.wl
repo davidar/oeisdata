@@ -1,0 +1,1 @@
+Accumulate[Range[0,30]^8] (* _Harvey P. Dale_, Jun 17 2015 *)

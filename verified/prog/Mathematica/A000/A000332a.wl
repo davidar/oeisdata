@@ -1,0 +1,1 @@
+Table[ Binomial[n, 4], {n, 0, 45} ] (* corrected by _Harvey P. Dale_, Aug 22 2011 *)

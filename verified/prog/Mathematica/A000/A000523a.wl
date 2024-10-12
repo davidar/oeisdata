@@ -1,0 +1,1 @@
+Floor[Log[2,Range[110]]] (* _Harvey P. Dale_, Jul 16 2012 *)

@@ -1,0 +1,1 @@
+Binomial[Range[20], 2]^2 (* _Eric W. Weisstein_, Jan 02 2018 *)

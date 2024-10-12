@@ -1,0 +1,1 @@
+f[n_] := Plus @@ Select[ Divisors@ n, OddQ]; Array[f, 75] (* _Robert G. Wilson v_, Jun 19 2011 *)

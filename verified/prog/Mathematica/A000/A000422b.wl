@@ -1,0 +1,1 @@
+Table[FromDigits[Flatten[IntegerDigits/@Range[n,1,-1]]],{n,20}] (* _Harvey P. Dale_, Jul 06 2019 *)

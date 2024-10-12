@@ -1,0 +1,1 @@
+f[n_] := n^2 (n + 1)^2/4; Array[f, 39, 0] (* _Robert G. Wilson v_, Nov 16 2012 *)

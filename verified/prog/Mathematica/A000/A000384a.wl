@@ -1,0 +1,1 @@
+Table[n*(2 n - 1), {n, 0, 100}] (* _Wesley Ivan Hurt_, Sep 27 2013 *)

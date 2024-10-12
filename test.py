@@ -50,6 +50,10 @@ for root, dirs, files in sorted(os.walk("prog/Mathematica")):
             verify(prog_path, prog)
             continue
 
+        if type(result) is not list:
+            print("Invalid result type:", result)
+            continue
+
         num_terms = min(len(result), len(seq))
         if num_terms > 10 and result[:num_terms] == seq[:num_terms]:
             print("PREFIX")

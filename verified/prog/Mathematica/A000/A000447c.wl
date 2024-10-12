@@ -1,0 +1,1 @@
+Join[{0}, Accumulate[Range[1, 81, 2]^2]] (* _Harvey P. Dale_, Jul 18 2013 *)

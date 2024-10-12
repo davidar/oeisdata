@@ -1,0 +1,1 @@
+Table[(n-4)(n-3)(n-2)(n-1)/24, {n, 100}] (* _Artur Jasinski_, Dec 02 2007 *)

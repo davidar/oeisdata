@@ -1,0 +1,1 @@
+Table[Sum[(-1)^(n-k) StirlingS2[n,k]k! 2^k,{k,0,n}],{n,0,20}] (* _Harvey P. Dale_, Oct 21 2011 *)

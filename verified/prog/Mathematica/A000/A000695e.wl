@@ -1,0 +1,1 @@
+Union[FromDigits[#,4]&/@Flatten[Table[Tuples[{0,1},n],{n,6}],1]] (* _Harvey P. Dale_, Oct 03 2015 *)

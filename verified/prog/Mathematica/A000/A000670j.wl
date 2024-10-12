@@ -1,0 +1,1 @@
+Table[Sum[k!*StirlingS2[n,k], {k, 0, n}], {n, 0, 20}] (* _Vaclav Kotesovec_, Nov 22 2020 *)

@@ -1,0 +1,1 @@
+Table[1/n * Sum[EulerPhi[n/d] Total@ Map[Fibonacci, d + # & /@ {-1, 1}], {d, Divisors@ n}], {n, 47}] (* _Michael De Vlieger_, Dec 28 2016 *)

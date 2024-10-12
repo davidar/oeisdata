@@ -1,0 +1,1 @@
+Table[Sum[(-1)^(n - k) k (-1)^(n - k) Binomial[n + 1, k + 1], {k, 0, n}], {n, 0, 28}] (* _Zerinvary Lajos_, Jul 08 2009 *)

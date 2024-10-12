@@ -1,0 +1,1 @@
+Table[n (4 n^2 - 1)/3, {n, 0, 80}] (* _Vladimir Joseph Stephan Orlovsky_, Apr 18 2011 *)

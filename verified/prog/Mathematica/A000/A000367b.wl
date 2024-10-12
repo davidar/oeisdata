@@ -1,0 +1,1 @@
+Table[Numerator[(-1)^(n+1) 2 Gamma[2 n + 1] Zeta[2 n]/(2 Pi)^(2 n)], {n, 0, 20}] (* _Artur Jasinski_, Dec 29 2020 *)

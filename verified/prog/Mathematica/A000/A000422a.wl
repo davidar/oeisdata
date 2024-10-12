@@ -1,0 +1,1 @@
+b = {}; a = {}; Do[w = RealDigits[n]; w = First[w]; Do[PrependTo[a, w[[Length[w] - k + 1]]], {k, 1, Length[w]}]; p = FromDigits[a]; AppendTo[b, p], {n, 1, 30}]; b (* _Artur Jasinski_, Mar 30 2008 *)

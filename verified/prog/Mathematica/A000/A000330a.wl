@@ -1,0 +1,1 @@
+Table[Binomial[w+2, 3] + Binomial[w+1, 3], {w, 0, 30}]

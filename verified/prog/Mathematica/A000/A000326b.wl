@@ -1,0 +1,1 @@
+Array[# (3 # - 1)/2 &, 47, 0] (* _Zerinvary Lajos_, Jul 10 2009 *)

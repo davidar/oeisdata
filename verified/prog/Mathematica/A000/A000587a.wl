@@ -1,0 +1,1 @@
+Table[ -1 * Sum[ (-1)^( k + 1) StirlingS2[ n, k ], {k, 0, n} ], {n, 0, 40} ]

@@ -1,0 +1,1 @@
+Table[n (3 n - 1)/2, {n, 0, 60}] (* _Stefan Steinerberger_, Apr 01 2006 *)

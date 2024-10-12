@@ -1,0 +1,1 @@
+Table[HermiteH[n, -1/2], {n, 0, 25}] (* _Vladimir Joseph Stephan Orlovsky_, Jun 15 2009 *)

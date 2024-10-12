@@ -1,0 +1,1 @@
+f[n_] := Times @@ PartitionsP /@ Last /@ FactorInteger@n; Array[f, 107] (* _Robert G. Wilson v_, Sep 22 2006 *)

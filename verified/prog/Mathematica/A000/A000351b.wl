@@ -1,0 +1,1 @@
+5^Range[0, 30] (* _Harvey P. Dale_, Aug 22 2011 *)

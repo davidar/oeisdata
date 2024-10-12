@@ -1,0 +1,1 @@
+Floor[Sqrt[Range[0, 99]]] (* _Alonso del Arte_, Dec 31 2013 *)

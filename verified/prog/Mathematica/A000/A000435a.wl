@@ -1,0 +1,1 @@
+f[n_] := (n - 1)! Sum [n^k/k!, {k, 0, n - 2}]; Array[f, 18] (* _Robert G. Wilson v_, Aug 10 2010 *)

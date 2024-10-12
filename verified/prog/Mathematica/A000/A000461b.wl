@@ -1,0 +1,1 @@
+Table[FromDigits[Flatten[IntegerDigits/@Table[n,{n}]]],{n,15}] (* _Harvey P. Dale_, Mar 01 2015 *)

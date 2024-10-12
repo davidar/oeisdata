@@ -1,0 +1,1 @@
+nMax=1000; n2=Floor[Sqrt[nMax-1]]; Union[Flatten[Table[a^2+b^2, {a,n2}, {b,a,Floor[Sqrt[nMax-a^2]]}]]]
