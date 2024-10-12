@@ -1,0 +1,1 @@
+print([8-n for n in range(60)]) # _Michael S. Branicky_, Aug 07 2021
