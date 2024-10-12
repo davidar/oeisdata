@@ -77,7 +77,7 @@ def write_programs(programs, sequence_id):
     if "Python" not in programs:
         return
     for lang, code_blocks in programs.items():
-        if lang != "Python" and lang != "JSON":
+        if lang != "Python" and lang != "JSON" and lang != "Mathematica":
             continue
         for i, code in enumerate(code_blocks):
             lang_ext = get_language_extension(lang)
