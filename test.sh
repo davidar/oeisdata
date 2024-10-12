@@ -21,6 +21,10 @@ test_script() {
 
     # Run the Python script and compare with JSON
     output="$(timeout 10 python "$python_file")"
+    if [ "$(echo "$output" | wc -l)" -gt 1 ]; then
+        echo "TOO LONG"
+        return
+    fi
     output="${output%, }"
     output="${output%,}"
     if echo "$output" | diff -Z "$json_file" - > /dev/null 2>&1; then
@@ -40,6 +44,12 @@ test_script() {
             ((passes++))
             echo >> "$python_file"
             echo "print([$seqname(n) for n in range(30)])" >> "$python_file"
+            verified "$python_file"
+        elif (cat "$python_file"; echo; echo "print([$seqname(n) for n in range(1,31)])") | timeout 3 python | ./diff.py "$json_file" > /dev/null 2>&1; then
+            echo DEF1
+            ((passes++))
+            echo >> "$python_file"
+            echo "print([$seqname(n) for n in range(1,31)])" >> "$python_file"
             verified "$python_file"
         elif (cat "$python_file"; echo; echo "print([a(n) for n in range(30)])") | timeout 3 python 2>/dev/null | ./diff.py "$json_file" > /dev/null 2>&1; then
             echo DEFA
@@ -72,9 +82,8 @@ test_script() {
 
 # Traverse the Python directory
 find prog/Python -name "*.py" | sort | while read -r python_file; do
+    if [ -e "verified/$python_file" ]; then
+        continue
+    fi
     test_script "$python_file"
 done
-
-# Print summary
-echo "Total passes: $passes"
-echo "Total fails: $fails"
