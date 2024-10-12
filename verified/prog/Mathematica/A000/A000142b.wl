@@ -1,0 +1,1 @@
+FoldList[#1 #2 &, 1, Range@ 20] (* _Robert G. Wilson v_, May 07 2011 *)

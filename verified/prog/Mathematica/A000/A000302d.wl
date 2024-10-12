@@ -1,0 +1,1 @@
+4^Range[0, 30] (* _Eric W. Weisstein_, Jun 29 2017 *)

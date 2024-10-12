@@ -1,0 +1,1 @@
+3^Range[0, 30] (* _Wesley Ivan Hurt_, Jul 04 2014 *)

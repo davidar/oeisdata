@@ -1,0 +1,1 @@
+Table[4^n, {n, 0, 30}] (* _Stefan Steinerberger_, Apr 01 2006 *)

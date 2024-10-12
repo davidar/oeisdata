@@ -1,0 +1,1 @@
+Select[Range[300], OddQ[DigitCount[ #, 2][[1]]] &] (* _Stefan Steinerberger_, Mar 31 2006 *)

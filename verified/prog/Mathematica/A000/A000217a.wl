@@ -1,0 +1,1 @@
+Array[ #*(# - 1)/2 &, 54] (* _Zerinvary Lajos_, Jul 10 2009 *)

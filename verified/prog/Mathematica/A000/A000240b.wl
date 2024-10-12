@@ -1,0 +1,1 @@
+Table[n!*Sum[(-1)^k/k!,{k,0,n-1}],{n,1,25}] (* _Vaclav Kotesovec_, Sep 26 2012 *)

@@ -1,0 +1,1 @@
+Accumulate[PartitionsP[Range[0,49]]] (* _George Beck_, Oct 23 2014; typo fixed by _Virgile Andreani_, Jul 10 2016 *)

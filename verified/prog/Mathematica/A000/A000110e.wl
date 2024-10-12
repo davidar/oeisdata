@@ -1,0 +1,1 @@
+b[1] = 1; k = 1; Flatten[{1, Table[Do[j = k; k += b[m]; b[m] = j;, {m, 1, n-1}]; b[n] = k, {n, 1, 40}]}] (* _Vaclav Kotesovec_, Sep 07 2019 *)

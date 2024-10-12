@@ -1,0 +1,1 @@
+f[n_] := Sum[ StirlingS2[n, k], {k, 0, n}]; Table[ f[n], {n, 0, 40}] (* _Robert G. Wilson v_ *)

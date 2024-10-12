@@ -1,0 +1,1 @@
+Table[Boole[n == 0], {n, 0, 99}] (* _Michael Somos_, Aug 25 2012 *)

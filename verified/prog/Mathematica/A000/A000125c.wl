@@ -1,0 +1,1 @@
+Table[Binomial[n, 3] + n, {n, 20}] (* _Eric W. Weisstein_, Jul 21 2017 *)

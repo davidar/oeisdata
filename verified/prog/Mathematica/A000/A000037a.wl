@@ -1,0 +1,1 @@
+a[n_] := (n + Floor[Sqrt[n + Floor[Sqrt[n]]]]); Table[a[n], {n, 71}] (* _Robert G. Wilson v_, Sep 24 2004 *)

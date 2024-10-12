@@ -1,0 +1,1 @@
+Fold[Append[#1, Total[Take[Flatten[Transpose[{#1, #1}]], #2]]] &, {1}, Range[2, 49]] (* _Birkas Gyorgy_, Apr 18 2011 *)

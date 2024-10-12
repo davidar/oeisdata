@@ -1,0 +1,1 @@
+Table[n (n + 1)(n + 2)/6, {n,0,100}] (* _Wesley Ivan Hurt_, Sep 25 2013 *)

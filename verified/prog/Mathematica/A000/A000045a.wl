@@ -1,0 +1,1 @@
+Table[Fibonacci[k], {k, 0, 50}] (* _Mohammad K. Azarian_, Jul 11 2015 *)

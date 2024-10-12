@@ -1,0 +1,1 @@
+Table[ Floor[ Sqrt[n^3]], {n, 0, 60}]

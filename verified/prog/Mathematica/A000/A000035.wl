@@ -1,0 +1,1 @@
+PadLeft[{},110,{0,1}] (* _Harvey P. Dale_, Sep 25 2011 *)

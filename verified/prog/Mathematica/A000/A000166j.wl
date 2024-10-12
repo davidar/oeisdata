@@ -1,0 +1,1 @@
+nxt[{n_,a_}]:={n+1,a(n+1)+(-1)^(n+1)}; NestList[nxt,{0,1},25][[All,2]] (* _Harvey P. Dale_, Jun 01 2019 *)

@@ -1,0 +1,1 @@
+nMax = 90; sList = Range[Floor[Sqrt[nMax]]]^2; Sqrt[#] &/@ Table[ Last[ Select[ sList, Divisible[n, #] &]], {n, nMax}] (* _Harvey P. Dale_, May 11 2011 *)

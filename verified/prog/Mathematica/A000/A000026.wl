@@ -1,0 +1,1 @@
+Array[ Times@@Flatten[ FactorInteger[ # ] ]&, 100 ]

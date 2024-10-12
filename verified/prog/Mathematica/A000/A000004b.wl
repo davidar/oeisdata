@@ -1,0 +1,1 @@
+Table[0, {n, 100}] (* _Matthew House_, Jul 14 2015 *)

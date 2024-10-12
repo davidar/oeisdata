@@ -1,0 +1,1 @@
+Table[Floor[N[n*(1+Sqrt[5])/2]], {n, 1, 75}]

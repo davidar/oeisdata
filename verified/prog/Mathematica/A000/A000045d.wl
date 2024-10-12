@@ -1,0 +1,1 @@
+Fibonacci[Range[0, 20]] (* _Eric W. Weisstein_, Sep 22 2017 *)

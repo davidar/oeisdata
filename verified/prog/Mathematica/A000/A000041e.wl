@@ -1,0 +1,1 @@
+a[0] := 1; a[n_] := a[n] = Block[{k=1, s=0, i=n-1}, While[i >= 0, s=s-(-1)^k (a[i]+a[i-k]); k=k+1; i=i-(3 k-2)]; s]; Map[a, Range[0, 49]] (* _Oliver Seipel_, Jun 01 2024 after Euler *)

@@ -1,0 +1,1 @@
+Join[{1}, Table[3*2^(n-1) CatalanNumber[n]/(n+2), {n, 30}]] (* _Harvey P. Dale_, Dec 18 2011 *)

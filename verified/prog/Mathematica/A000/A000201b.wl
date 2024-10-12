@@ -1,0 +1,1 @@
+Array[ Floor[ #*GoldenRatio] &, 68] (* _Robert G. Wilson v_, Apr 17 2010 *)

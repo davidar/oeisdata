@@ -1,0 +1,1 @@
+Array[#^2 &, 51, 0] (* _Robert G. Wilson v_, Aug 01 2014 *)

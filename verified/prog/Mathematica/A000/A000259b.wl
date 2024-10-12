@@ -1,0 +1,1 @@
+Table[Sum[(-1)^(k - 1)*Binomial[3 n, n - k]*k/n*Fibonacci[k - 2], {k, n}], {n, 21}] (* _Michael De Vlieger_, Aug 04 2017 *)

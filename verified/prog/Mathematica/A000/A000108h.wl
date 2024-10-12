@@ -1,0 +1,1 @@
+Table[ CatalanNumber@ n, {n, 0, 24}] (* _Robert G. Wilson v_, Feb 15 2011 *)

@@ -1,0 +1,1 @@
+Prime[Range[60]]

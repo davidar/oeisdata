@@ -1,0 +1,1 @@
+a[0] := 1; a[1] := 1; a[n_] := a[n] = Sum[Binomial[n - 2, k] a[k] a[n - 1 - k], {k, 0, n - 2}]; Map[a, Range[0, 26]] (* _Oliver Seipel_, May 24 2024 after _Peter Bala_ *)

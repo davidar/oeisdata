@@ -1,0 +1,1 @@
+Table[Range[n].Range[n,1,-1],{n,0,50}] (* _Harvey P. Dale_, Mar 02 2024 *)

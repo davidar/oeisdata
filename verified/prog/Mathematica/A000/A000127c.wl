@@ -1,0 +1,1 @@
+Table[(n^4 - 6 n^3 + 23 n^2 - 18 n + 24) / 24, {n, 100}] (* _Vincenzo Librandi_, Feb 16 2015 *)

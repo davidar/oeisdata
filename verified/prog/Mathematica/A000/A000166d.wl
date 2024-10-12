@@ -1,0 +1,1 @@
+dr[{n_,a1_,a2_}]:={n+1,a2,n(a1+a2)}; Transpose[NestList[dr,{0,0,1},30]][[3]] (* _Harvey P. Dale_, Feb 23 2013 *)

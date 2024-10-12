@@ -1,0 +1,1 @@
+Array[1 &, 50] (* Joseph Biberstine (jrbibers(AT)indiana.edu), Dec 26 2006 *)

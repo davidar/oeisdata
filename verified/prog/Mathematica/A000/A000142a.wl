@@ -1,0 +1,1 @@
+Table[Factorial[n], {n, 0, 20}] (* _Stefan Steinerberger_, Mar 30 2006 *)

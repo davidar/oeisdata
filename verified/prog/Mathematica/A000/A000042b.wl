@@ -1,0 +1,1 @@
+FromDigits/@Table[PadLeft[{},n,1],{n,20}] (* _Harvey P. Dale_, Aug 21 2011 *)

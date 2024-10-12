@@ -1,0 +1,1 @@
+Table[ BernoulliB[2 n] + Total[ 1/Select[ Prime /@ Range[n+1], Divisible[2n, #-1] &]], {n, 1, 22}] (* _Jean-François Alcover_, Oct 12 2011 *)

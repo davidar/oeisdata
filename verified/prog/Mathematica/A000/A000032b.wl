@@ -1,0 +1,1 @@
+Array[2 Fibonacci[# + 1] - Fibonacci[#] &, 50, 0] (* Joseph Biberstine (jrbibers(AT)indiana.edu), Dec 26 2006 *)

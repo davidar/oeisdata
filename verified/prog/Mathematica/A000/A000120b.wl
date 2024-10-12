@@ -1,0 +1,1 @@
+Nest[Flatten[# /. # -> {#, # + 1}] &, {0}, 7] (* _Robert G. Wilson v_, Sep 27 2011 *)

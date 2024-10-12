@@ -1,0 +1,1 @@
+a[n_] := (2^(2*n)*(2^(2*n) - 1)*Abs[BernoulliB[2*n]])/(2*n); a /@  Range[20]  (* _Stan Wagon_, Nov 21 2022 *)

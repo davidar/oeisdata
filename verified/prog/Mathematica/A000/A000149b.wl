@@ -1,0 +1,1 @@
+Floor[E^Range[0,30]] (* _Harvey P. Dale_, Apr 01 2012 *)

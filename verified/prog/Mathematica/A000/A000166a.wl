@@ -1,0 +1,1 @@
+a[0] = 1; a[n_] := n*a[n - 1] + (-1)^n; a /@ Range[0, 21] (* _Robert G. Wilson v_ *)

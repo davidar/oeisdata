@@ -1,0 +1,1 @@
+f[p_, e_] := p^Floor[e/2]; a[1] = 1; a[n_] := Times @@ f @@@ FactorInteger[n]; Array[a, 100] (* _Amiram Eldar_, Sep 18 2020 *)

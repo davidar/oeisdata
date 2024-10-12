@@ -1,0 +1,1 @@
+Table[Quotient[n^2, 3], {n, 0, 59}] (* _Michael Somos_, Jan 22 2014 *)

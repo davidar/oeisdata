@@ -1,0 +1,1 @@
+a[0] = 1; a[n_] := Sum[Mod[k, 2] EulerPhi[k]*2^(n/k)/(2*n), {k, Divisors[n]}]; Table[a[n], {n, 0, 35}](* _Jean-François Alcover_, Feb 17 2012, after Pari *)

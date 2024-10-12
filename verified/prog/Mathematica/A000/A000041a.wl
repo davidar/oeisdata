@@ -1,0 +1,1 @@
+Table[ PartitionsP[n], {n, 0, 45}]

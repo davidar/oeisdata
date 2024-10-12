@@ -1,0 +1,1 @@
+a[0] = 1; a[n_] := a[n] = a[Floor[n/2]] + a[n-1]; Array[a,49,0] (* _Jean-François Alcover_, Apr 11 2011, after _M. F. Hasler_ *)

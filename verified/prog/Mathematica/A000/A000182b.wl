@@ -1,0 +1,1 @@
+v[1] = 2; v[n_] /; n >= 2 := v[n] = Sum[ Binomial[2 n - 3, 2 k - 2] v[k] v[n - k], {k, n - 1}]; Table[ v[n]/2, {n, 15}] (* _Zerinvary Lajos_, Jul 08 2009 *)

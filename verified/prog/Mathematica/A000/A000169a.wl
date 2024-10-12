@@ -1,0 +1,1 @@
+Table[n^(n - 1), {n, 1, 20}] (* _Stefan Steinerberger_, Apr 01 2006 *)

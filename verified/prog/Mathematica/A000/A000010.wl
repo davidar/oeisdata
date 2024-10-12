@@ -1,0 +1,1 @@
+Array[EulerPhi, 70]

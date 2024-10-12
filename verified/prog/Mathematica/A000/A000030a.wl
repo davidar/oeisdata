@@ -1,0 +1,1 @@
+Join[{0},First[IntegerDigits[#]]&/@Range[90]] (* _Harvey P. Dale_, Mar 01 2011 *)

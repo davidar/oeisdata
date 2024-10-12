@@ -1,0 +1,1 @@
+Range[0, 99]^2 (* _Alonso del Arte_, Nov 21 2019 *)

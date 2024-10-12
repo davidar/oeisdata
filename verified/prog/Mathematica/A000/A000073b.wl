@@ -1,0 +1,1 @@
+a[0] = a[1] = 0; a[2] = 1; a[n_] := a[n] = a[n - 1] + a[n - 2] + a[n - 3]; Array[a, 36, 0] (* _Robert G. Wilson v_, Nov 07 2010 *)

@@ -1,0 +1,1 @@
+Table[2^(2^n) + 1, {n, 0, 8}] (* _Alonso del Arte_, Jun 07 2011 *)

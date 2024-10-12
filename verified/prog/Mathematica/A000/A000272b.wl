@@ -1,0 +1,1 @@
+Join[{1},Table[n^(n-2),{n,20}]] (* _Harvey P. Dale_, Nov 28 2012 *)

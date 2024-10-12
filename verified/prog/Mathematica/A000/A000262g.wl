@@ -1,0 +1,1 @@
+Table[n!*LaguerreL[n, -1, -1], {n, 0, 30}] (* _G. C. Greubel_, Feb 23 2021 *)

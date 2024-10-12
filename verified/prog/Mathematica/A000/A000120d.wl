@@ -1,0 +1,1 @@
+Nest[Join[#, # + 1] &, {0}, 7] (* _IWABUCHI Yu(u)ki_, Jul 19 2012 *)

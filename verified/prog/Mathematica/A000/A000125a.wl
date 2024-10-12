@@ -1,0 +1,1 @@
+Table[(n^3 + 5 n + 6)/6, {n, 0, 50}] (* _Harvey P. Dale_, Jan 19 2013 *)

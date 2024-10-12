@@ -1,0 +1,1 @@
+Table[Plus @@ IntegerDigits[n, 2], {n, 0, 104}]

@@ -1,0 +1,1 @@
+Table[n, {n, 0, 20}, {2n + 1}] //Flatten (* _Zak Seidov_ Mar 19 2011 *)

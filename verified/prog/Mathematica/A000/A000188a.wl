@@ -1,0 +1,1 @@
+Array[Function[n, Count[Array[PowerMod[#, 2, n ] &, n, 0 ], 0 ] ], 100]

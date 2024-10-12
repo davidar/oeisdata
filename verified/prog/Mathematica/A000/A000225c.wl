@@ -1,0 +1,1 @@
+NestList[2 # + 1 &, 0, 32] (* _Robert G. Wilson v_, Feb 28 2011 *)

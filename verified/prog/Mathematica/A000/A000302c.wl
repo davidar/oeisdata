@@ -1,0 +1,1 @@
+NestList[4 # &, 1, 30] (* _Harvey P. Dale_, Mar 26 2015 *)

@@ -1,0 +1,1 @@
+With[{upto=100},Complement[Range[upto],Range[Floor[Sqrt[upto]]]^2]] (* _Harvey P. Dale_, Dec 02 2011 *)

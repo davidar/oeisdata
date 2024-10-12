@@ -1,0 +1,1 @@
+CoefficientList[ Sum[ x^(m^2), {m, -(n=10), n} ], x ]

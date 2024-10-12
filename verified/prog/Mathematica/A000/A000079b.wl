@@ -1,0 +1,1 @@
+2^Range[0, 50] (* _Wesley Ivan Hurt_, Jun 14 2014 *)

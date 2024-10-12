@@ -1,0 +1,1 @@
+Binomial[Range[20] + 1, 3] (* _Eric W. Weisstein_, Sep 08 2017 *)

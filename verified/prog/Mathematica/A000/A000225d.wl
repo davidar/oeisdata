@@ -1,0 +1,1 @@
+2^Range[0, 20] - 1 (* _Eric W. Weisstein_, Jul 17 2017 *)

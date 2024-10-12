@@ -1,0 +1,1 @@
+f[n_] := Sum[Binomial[n, i], {i, 0, 4}]; Table[f@n, {n, 0, 40}] (* _Robert G. Wilson v_, Jun 29 2007 *)
