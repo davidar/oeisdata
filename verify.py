@@ -22,7 +22,7 @@ def run_mathics(prog, reset=True):
     # print(f"> {prog}")
 
     try:
-        result = session.evaluate_as_in_cli(prog, timeout=5)
+        result = session.evaluate_as_in_cli(prog, timeout=3)
         # print(result.get_data())
         result = result.get_data()["result"]
     except KeyboardInterrupt:
@@ -78,11 +78,11 @@ def check(expected, result):
         return True
     if type(result) is not list:
         return False
-    num_terms = min(len(result), len(expected))
     for i in range(3):
-        if num_terms > 8 and result[:num_terms] == expected[i:num_terms+i]:
+        num_terms = min(len(result), len(expected[i:]))
+        if num_terms > 8 and result[:num_terms] == expected[i:][:num_terms]:
             return True
-    if num_terms > 1:
+    if len(result) > 1:
         print(f"Unable to match {result} to {expected}")
     return False
 
@@ -114,6 +114,10 @@ def process_markdown_file(input_file):
                 print("List")
             elif check(expected, run_mathics("Array[a, 30]", reset=False)):
                 print("Array")
+            elif check(expected, run_mathics("a[30]//N//Chop//IntegerPart", reset=False)):
+                print("ListN")
+            elif check(expected, run_mathics("Array[a, 30]//N//Chop//IntegerPart", reset=False)):
+                print("ArrayN")
             else:
                 print("FAIL")
 
