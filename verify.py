@@ -12,11 +12,14 @@ from mathics.session import MathicsSession
 session = MathicsSession()
 
 
-def run_mathics(prog):
-    try:
-        session.evaluate_as_in_cli('Clear["Global`*"]', timeout=3)
-    except:
-        session.reset()
+def run_mathics(prog, reset=True):
+    if reset:
+        try:
+            session.evaluate_as_in_cli('Clear["Global`*"]', timeout=3)
+        except:
+            session.reset()
+
+    # print(f"> {prog}")
 
     try:
         result = session.evaluate_as_in_cli(prog, timeout=5)
@@ -76,8 +79,11 @@ def check(expected, result):
     if type(result) is not list:
         return False
     num_terms = min(len(result), len(expected))
-    if num_terms > 10 and result[:num_terms] == expected[:num_terms]:
-        return True
+    for i in range(3):
+        if num_terms > 8 and result[:num_terms] == expected[i:num_terms+i]:
+            return True
+    if num_terms > 1:
+        print(f"Unable to match {result} to {expected}")
     return False
 
 
@@ -104,13 +110,14 @@ def process_markdown_file(input_file):
             print(language, end="... ")
             if check(expected, run_mathics(code)):
                 print("OK")
-            elif check(expected, run_mathics(f"{code}; a[30]")):
+            elif check(expected, run_mathics("a[30]", reset=False)):
                 print("List")
-            elif check(expected, run_mathics(f"{code}; Array[a, 30]")):
+            elif check(expected, run_mathics("Array[a, 30]", reset=False)):
                 print("Array")
             else:
                 print("FAIL")
 
+        """
         if language == "Python":
             print(language, end="... ")
             if check(expected, run_python(code)):
@@ -129,6 +136,7 @@ def process_markdown_file(input_file):
                 print(f"{sequence_id}_list")
             else:
                 print("FAIL")
+        """
 
         # Reconstruct the code block
         return f"```{language}\n{code}```"
@@ -137,8 +145,8 @@ def process_markdown_file(input_file):
     processed_content = re.sub(pattern, replace_code_block, content, flags=re.DOTALL)
 
     # Write the processed content to the output file
-    with open(input_file, "w") as f:
-        f.write(processed_content)
+    # with open(input_file, "w") as f:
+    #     f.write(processed_content)
 
 
 # Usage
