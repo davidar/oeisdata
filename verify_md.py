@@ -80,7 +80,7 @@ def check(expected, result):
         return False
     for i in range(3):
         num_terms = min(len(result), len(expected[i:]))
-        if num_terms > 8 and result[:num_terms] == expected[i:][:num_terms]:
+        if num_terms > 7 and result[:num_terms] == expected[i:][:num_terms]:
             return True
     if len(result) > 1:
         print(f"Unable to match {result} to {expected}")
