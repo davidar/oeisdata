@@ -31,6 +31,9 @@ def run_mathics(prog, expected, reset=True):
     except KeyboardInterrupt:
         raise
     except Exception as e:
+        if str(e) == "maximum recursion depth exceeded":
+            print("Recursion Limit")
+            return "RECURSION"
         print("Error:", e)
         return "ERROR"
 
@@ -40,6 +43,18 @@ def run_mathics(prog, expected, reset=True):
     try:
         result = json.loads(result.replace("{", "[").replace("}", "]"))
     except:
+        if result == "$Aborted":
+            print("Aborted")
+            return "ABORT"
+        if result == "$Failed":
+            print("Failed")
+            return "FAIL"
+        if result == "$RecursionLimit":
+            print("Recursion Limit")
+            return "RECURSION"
+        if result == prog:
+            print("Unevaluated")
+            return "UNEVAL"
         print("Unable to parse result:", result)
         return "PARSE"
 
@@ -67,7 +82,7 @@ def check(expected, result):
         if num_terms > 7 and result[:num_terms] == expected[i:][:num_terms]:
             return True
     if len(result) > 1:
-        print(f"Unable to match {result} to {expected}")
+        print(f"Unable to match:\n{result}\n{expected}")
     return False
 
 
@@ -114,7 +129,7 @@ def extract_programs(content):
                 print("OK")
             else:
                 print("FAIL")
-            print(f"***** {passed}/{total} ({100*passed/total:.2f}%) *****")
+            print(f"***** {passed}/{total} ({100*passed/total:.2f}%) *****", flush=True)
 
 
 def process_file(input_filepath):
