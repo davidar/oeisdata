@@ -3,6 +3,7 @@
 import json
 import os
 import re
+import sys
 
 from mathics.session import MathicsSession
 import stopit
@@ -142,31 +143,30 @@ def extract_programs(content, sequence_id):
             print(f"***** {passed}/{total} ({100*passed/total:.2f}%) *****", flush=True)
 
 
-def process_file(input_filepath):
-    # Extract sequence ID from the filepath
-    sequence_id = os.path.splitext(os.path.basename(input_filepath))[0]
-    print(sequence_id)
-
-    # Read the file content
-    with open(input_filepath, "r") as f:
-        content = f.read()
-
-    # Extract programs (this function remains unchanged)
-    extract_programs(content, sequence_id)
-
-
-def main():
+def main(start="A000001"):
     input_dir = "seq"
 
     for root, dirs, files in sorted(os.walk(input_dir)):
         for file in sorted(files):
             if file.endswith(".seq"):
                 input_filepath = os.path.join(root, file)
-                process_file(input_filepath)
+                # Extract sequence ID from the filepath
+                sequence_id = os.path.splitext(os.path.basename(input_filepath))[0]
+                print(sequence_id)
+
+                if int(sequence_id[1:]) < int(start[1:]):
+                    continue
+
+                # Read the file content
+                with open(input_filepath, "r") as f:
+                    content = f.read()
+
+                # Extract programs (this function remains unchanged)
+                extract_programs(content, sequence_id)
 
 
 if __name__ == "__main__":
-    main()
+    main(*sys.argv[1:])
 
 # Kill threads
 os._exit(0)
