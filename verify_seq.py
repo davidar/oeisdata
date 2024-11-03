@@ -11,7 +11,7 @@ import stopit
 session = MathicsSession()
 
 
-def run_mathics(prog, expected, reset=True):
+def run_mathics(prog: str, expected: list, reset: bool = True) -> str:
     if reset:
         try:
             session.evaluate_as_in_cli('Clear["Global`*"]', timeout=3)
@@ -19,6 +19,12 @@ def run_mathics(prog, expected, reset=True):
             session.reset()
 
     print(f"> {prog}")
+
+    if prog == "":
+        return "BLANK"
+
+    if prog[0].isspace():
+        return "INDENT"
 
     try:
         with stopit.ThreadingTimeout(3.5) as to_ctx_mgr:
@@ -73,7 +79,7 @@ def run_mathics(prog, expected, reset=True):
         return "FAIL"
 
 
-def check(expected, result):
+def check(expected: list, result: list) -> bool:
     if expected == result:
         return True
     if type(result) is not list:
@@ -87,13 +93,13 @@ def check(expected, result):
     return False
 
 
-def dump_program(expr, expected, sequence_id, code):
+def dump_program(expr: str, expected: list, sequence_id: str, code: str):
     code = code.lower()
     with open(f"results/{code}.tsv", "a") as f:
         f.write(f"{sequence_id}\t{expr}\t{expected}\n")
 
 
-def check_expression(expr, expected, sequence_id):
+def check_expression(expr: str, expected: list, sequence_id: str) -> bool:
     code = run_mathics(expr, expected)
     if code == "OK":
         dump_program(expr, expected, sequence_id, code)
@@ -119,7 +125,7 @@ total = 0
 passed = 0
 
 
-def extract_programs(content, sequence_id):
+def extract_programs(content: str, sequence_id: str):
     global total, passed
     terms = []
     lines = content.split("\n")
