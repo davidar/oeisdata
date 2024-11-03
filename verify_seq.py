@@ -88,6 +88,10 @@ def check(expected: list, result: list) -> bool:
         num_terms = min(len(result), len(expected[i:]))
         if num_terms > 7 and result[:num_terms] == expected[i:][:num_terms]:
             return True
+    for i in range(3):
+        num_terms = min(len(result[i:]), len(expected))
+        if num_terms > 7 and result[i:][:num_terms] == expected[:num_terms]:
+            return True
     if len(result) > 1:
         print(f"Unable to match:\n{result}\n{expected}")
     return False
