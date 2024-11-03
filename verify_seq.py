@@ -86,21 +86,31 @@ def check(expected, result):
     return False
 
 
-def check_expression(expr, expected):
+def dump_program(expr, expected, sequence_id, code):
+    code = code.lower()
+    with open(f"results/{code}.tsv", "a") as f:
+        f.write(f"{sequence_id}\t{expr}\t{expected}\n")
+
+
+def check_expression(expr, expected, sequence_id):
     code = run_mathics(expr, expected)
     if code == "OK":
+        dump_program(expr, expected, sequence_id, code)
         return True
 
     if code == "EMPTY" and "Global`a" in session.definitions.get_user_names():
         code = run_mathics("a[10]", expected, reset=False)
         if code == "OK":
+            dump_program(expr, expected, sequence_id, code)
             return True
 
         if code == "INT":
             code = run_mathics("Array[a,10]", expected, reset=False)
             if code == "OK":
+                dump_program(expr, expected, sequence_id, code)
                 return True
 
+    dump_program(expr, expected, sequence_id, code)
     return False
 
 
@@ -108,7 +118,7 @@ total = 0
 passed = 0
 
 
-def extract_programs(content):
+def extract_programs(content, sequence_id):
     global total, passed
     terms = []
     lines = content.split("\n")
@@ -124,7 +134,7 @@ def extract_programs(content):
         if line.startswith("%t"):
             code_line = re.sub(r"^%[pto] A\d+ ?", "", line)
             total += 1
-            if check_expression(code_line, terms):
+            if check_expression(code_line, terms, sequence_id):
                 passed += 1
                 print("OK")
             else:
@@ -142,7 +152,7 @@ def process_file(input_filepath):
         content = f.read()
 
     # Extract programs (this function remains unchanged)
-    extract_programs(content)
+    extract_programs(content, sequence_id)
 
 
 def main():
